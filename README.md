@@ -1,73 +1,155 @@
-# Welcome to your Lovable project
+# 🌐 ProductSphere — E-Commerce Product Marketplace Dashboard
+A modern, feature-rich **E-Commerce Product Marketplace Dashboard** built with **React, TypeScript, Vite, Tailwind CSS, and shadcn/ui**.  
+This application allows users to browse, filter, and explore products by **brand, category, price range, availability**, and more — all through a clean and responsive interface.
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/21de8075-b2a8-45ee-a066-b0bb5031661f
+## 🚀 Features
 
-## How can I edit this code?
+### 🏬 **Product Marketplace**
+- Beautiful card-based product display
+- Discount badges and dynamic price formatting
+- Availability tags (In Stock / Out of Stock)
 
-There are several ways of editing your application.
+### 🧭 **Smart Filtering System**
+- Min/Max price sliders
+- Availability filter
+- Category filter
+- Company/Brand filter
+- Top N products filter
 
-**Use Lovable**
+### 📊 **Dynamic Sidebar Navigation**
+- Fully collapsible sidebar using shadcn/ui
+- Icons visible in collapsed mode
+- Navigation sections:
+  - Navigation (Dashboard, All Products)
+  - Companies (AMZ, FLP, SNP, MYN, AZO)
+  - Categories (Phone, Laptop, TV, etc.)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/21de8075-b2a8-45ee-a066-b0bb5031661f) and start prompting.
+### 🎨 **Modern UI/UX**
+- Built using shadcn/ui + Radix primitives
+- Responsive layout with Tailwind CSS
+- Clean typography & spacing
+- Accessible, keyboard-friendly components
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠️ Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Frontend**
+- **React**  
+- **TypeScript**  
+- **Vite**  
+- **Tailwind CSS**  
+- **shadcn/ui**  
+- **Lucide Icons**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**API**
+- Custom REST API consumed via `api.ts`
+- Asynchronous data fetching with `Promise.all()`
 
-Follow these steps:
+---
 
+## 📂 Folder Structure
+
+```
+src/
+ ├── components/
+ ├── pages/
+ ├── lib/
+ │    └── api.ts
+ ├── types/
+ ├── AppSidebar.tsx
+ ├── App.tsx
+ └── main.tsx
+```
+
+---
+
+## 🏃‍♂️ Getting Started
+
+### 1. Clone the repository
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone <YOUR_REPO_URL>
+```
 
-# Step 2: Navigate to the project directory.
+### 2. Open the project folder
+```sh
 cd <YOUR_PROJECT_NAME>
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 3. Install dependencies
+```sh
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 4. Start development server
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Your app will be running at:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+👉 http://localhost:5173
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🌍 Deploying the Project
 
-## What technologies are used for this project?
+You can deploy this project easily on any modern hosting platform:
 
-This project is built with:
+- **Vercel**
+- **Netlify**
+- **Render**
+- **Firebase Hosting**
+- **GitHub Pages**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Example (Vercel):
+```
+npm run build
+vercel deploy
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/21de8075-b2a8-45ee-a066-b0bb5031661f) and click on Share -> Publish.
+## 🔗 API Integration
 
-## Can I connect a custom domain to my Lovable project?
+The project uses a centralized API service:
 
-Yes, you can!
+`src/lib/api.ts`
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+This handles:
+- Fetching companies  
+- Fetching categories  
+- Fetching all products  
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+You can point it to any backend of your choice (Node.js, Express, MongoDB, etc.).
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+You can:
+- Add new components  
+- Improve filtering options  
+- Extend product features  
+- Add pagination or search  
+- Enhance mobile responsiveness  
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🙌 Acknowledgements
+
+Special thanks to:
+- **shadcn/ui**
+- **Radix UI**
+- **Lucide Icons**
+- **React & Vite teams**
