@@ -138,15 +138,7 @@ You can:
 - Add pagination or search  
 - Enhance mobile responsiveness  
 
----
 
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
----
-
-## 🙌 Acknowledgements
 
 Special thanks to:
 - **shadcn/ui**
