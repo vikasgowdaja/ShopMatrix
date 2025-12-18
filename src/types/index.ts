@@ -26,4 +26,6 @@ export interface FilterOptions {
   maxPrice?: number;
   availability?: 'yes' | 'no' | '';
   top?: number;
+  sortBy?: 'price-low' | 'price-high' | 'rating' | 'discount' | 'newest';
+  search?: string;
 }
